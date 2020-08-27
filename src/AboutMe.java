@@ -8,12 +8,18 @@ public class AboutMe {
         double averageGrade = 2.1;
         boolean isMarried = false;
 
-        if (isFemale = true) {
+        if (isFemale == true) {
             System.out.print("Frau ");
         } else {
             System.out.print("Herr ");
         }
-        System.out.println(lastName + " " + firstName + ", der am " + dateOfBirth + " geboren wurde und daher " + age + " Jahre alt ist");
+        System.out.print(lastName + " " + firstName + ", der am " + dateOfBirth + " geboren wurde und daher " + age + " Jahre alt ist, ist ");
+
+        if (isMarried == false) {
+            System.out.print("nicht ");
+        }
+
+        System.out.println("verheiratet und hat einen Notendurchschnitt von " + averageGrade);
 
 
     }
